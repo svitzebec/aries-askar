@@ -52,3 +52,17 @@ pub use protect::{generate_raw_store_key, PassKey, StoreKeyMethod};
 
 mod storage;
 pub use storage::{Entry, EntryTag, Scan, Store, TagFilter};
+
+pub struct FfiStr<'a> {
+    cstr: *const c_char,
+    _boo: PhantomData<&'a ()>,
+}
+
+pub struct ByteBuffer {
+    len: i64,
+    data: *mut u8,
+}
+
+new_sequence_handle!(StoreHandle, FFI_STORE_COUNTER);
+new_sequence_handle!(SessionHandle, FFI_SESSION_COUNTER);
+new_sequence_handle!(ScanHandle, FFI_SCAN_COUNTER);

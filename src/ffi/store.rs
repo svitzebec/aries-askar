@@ -33,7 +33,8 @@ static FFI_SESSIONS: Lazy<StoreResourceMap<SessionHandle, AnySession>> =
 static FFI_SCANS: Lazy<StoreResourceMap<ScanHandle, Scan<'static, Entry>>> =
     Lazy::new(|| StoreResourceMap::new());
 
-impl StoreHandle {
+#[repr(C)]
+pub impl StoreHandle {
     pub async fn create(value: AnyStore) -> Self {
         let handle = Self::next();
         let mut repo = FFI_STORES.write().await;
