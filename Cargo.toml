@@ -16,7 +16,7 @@ keywords = ["hyperledger", "aries", "ssi", "verifiable", "credentials"]
 [lib]
 name = "aries_askar"
 path = "src/lib.rs"
-crate-type = ["staticlib", "rlib", "cdylib"]
+crate-type = ["staticlib", "rlib", "cdylib", "dylib"]
 
 [package.metadata.docs.rs]
 features = ["all_backends"]
