@@ -14,5 +14,4 @@ FOUNDATION_EXPORT double AriesAskarVersionNumber;
 FOUNDATION_EXPORT const unsigned char AriesAskarVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <AriesAskar/PublicHeader.h>
-#import <AriesAskar/askar_wallet.h>
-
+#import <AriesAskar/AskarWallet.h>
