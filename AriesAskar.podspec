@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "AriesAskar"
-    s.version      = "0.2.5"
+    s.version      = "0.2.6"
     s.summary      = "A brief description of AriesAskar project."
     s.description  = <<-DESC
     An extended description of AriesAskar project.
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
                   LICENSE
                 }
     s.author             = { "AlonsoAGlobant" => "alonso.alvarez@globant.com" }
-    s.source       = "https://github.com/AlonsoAGlobant/aries-askar/blob/main/wrappers/ios/AriesAskarFramework.zip"
+    s.source       = { :http => 'https://github.com/AlonsoAGlobant/aries-askar/blob/main/wrappers/ios/AriesAskarFramework.zip' }
     s.vendored_frameworks = "AriesAskar/AriesAskar.framework"
     s.platform = :ios
     s.swift_version = "5.0"
