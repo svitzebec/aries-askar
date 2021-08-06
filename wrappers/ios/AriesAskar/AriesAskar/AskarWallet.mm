@@ -16,8 +16,9 @@
     [completion copy];
     ErrorCode ret;
     int64_t handle = [[AskarCallbacks sharedInstance] createCommandHandleFor:completion];
-    //    ret = askar_session_update(0, 0, "", "", "", "", 0, NULL, 0);
 
+    // TODO: - Call here the session update method
+    //    ret = askar_session_update(0, 0, "", "", "", "", 0, NULL, 0);
 
     [[AskarCallbacks sharedInstance] complete:completion forHandle:handle ifError:ret];
 }
