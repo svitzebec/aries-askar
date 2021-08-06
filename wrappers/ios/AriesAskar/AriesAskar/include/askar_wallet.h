@@ -127,19 +127,21 @@ ErrorCode askar_key_entry_list_load_local(KeyEntryListHandle handle,
 
 void askar_buffer_free(struct SecretBuffer buffer);
 
-ErrorCode askar_session_fetch(int32_t handle,
-                              const char* category,
-                              const char* name,
-                              int8_t for_update,
-                              void (*cb)(CallbackId cb_id, ErrorCode err, EntryListHandle results),
-                              CallbackId cb_id);
+// TODO: - We need to find a way to generate this headers methods with FfiStr and ByteBuffer which are included in the rust standard library and are not custom implemented.
 
-ErrorCode askar_session_update(int32_t handle,
-                               int8_t operation,
-                               const char* category,
-                               const char* name,
-                               const char* value,
-                               const char* tags,
-                               int64_t expiry_ms,
-                               void (*cb)(CallbackId cb_id, ErrorCode err),
-                               CallbackId cb_id);
+//ErrorCode askar_session_fetch(SessionHandle handle,
+//                              struct FfiStr category,
+//                              struct FfiStr name,
+//                              int8_t for_update,
+//                              void (*cb)(CallbackId cb_id, ErrorCode err, EntryListHandle results),
+//                              CallbackId cb_id);
+//
+//ErrorCode askar_session_update(SessionHandle handle,
+//                               int8_t operation,
+//                               struct FfiStr category,
+//                               struct FfiStr name,
+//                               struct ByteBuffer value,
+//                               struct FfiStr tags,
+//                               int64_t expiry_ms,
+//                               void (*cb)(CallbackId cb_id, ErrorCode err),
+//                               CallbackId cb_id);
