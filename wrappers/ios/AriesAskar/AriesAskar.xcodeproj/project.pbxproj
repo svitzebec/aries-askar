@@ -20,7 +20,7 @@
 		76B13CA626BD0431000C320B /* NSError+AskarError.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B13CA426BD0431000C320B /* NSError+AskarError.m */; };
 		76B13CAB26BD0458000C320B /* NSDictionary+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 76B13CA926BD0458000C320B /* NSDictionary+JSON.h */; };
 		76B13CAC26BD0458000C320B /* NSDictionary+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B13CAA26BD0458000C320B /* NSDictionary+JSON.m */; };
-		76BE36E626BC91D6009AABE0 /* libaries_askar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A994BC26BB9556003E2550 /* libaries_askar.a */; };
+		76B13CC626BD1149000C320B /* libaries_askar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A994BC26BB9556003E2550 /* libaries_askar.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76BE36E626BC91D6009AABE0 /* libaries_askar.a in Frameworks */,
+				76B13CC626BD1149000C320B /* libaries_askar.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
