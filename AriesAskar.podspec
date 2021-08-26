@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "AriesAskar"
-    s.version      = "0.2.2-test2"
+    s.version      = "0.2.2-test3"
     s.summary      = "A brief description of AriesAskar project."
     s.description  = <<-DESC
     An extended description of AriesAskar project.
@@ -13,8 +13,11 @@ Pod::Spec.new do |s|
                 }
     s.author             = { "Svit Zebec" => "svit.zebec@kamino.si" }
     s.source       = { :http => 'https://github.com/svitzebec/aries-askar/blob/feature/static-lib-ios-pod/builds/ios/v0.2.2/aries-askar.zip?raw=true' }
-    s.vendored_libraries = 'libaries_askar.a'
-    s.ios.xcconfig = { "HEADER_SEARCH_PATHS" => "$(PODS_ROOT)" }
+    s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    s.ios.source_files = 'aries-askar.h', 'AskarTypes.h'
+    s.ios.vendored_libraries = 'libaries_askar.a'
+    s.ios.xcconfig = { 'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}"' }
     s.platform = :ios
     s.swift_version = "5.0"
     s.ios.deployment_target  = '12.0'
