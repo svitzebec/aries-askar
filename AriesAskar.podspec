@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "AriesAskar"
-    s.version      = "0.2.2-test"
+    s.version      = "0.2.2-test2"
     s.summary      = "A brief description of AriesAskar project."
     s.description  = <<-DESC
     An extended description of AriesAskar project.
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
                   LICENSE
                 }
     s.author             = { "Svit Zebec" => "svit.zebec@kamino.si" }
-    s.source       = { :http => 'https://github.com/svitzebec/aries-askar/blob/feature/static-lib-ios-pod/builds/ios/v0.2.2/aries-askar.zip' }
+    s.source       = { :http => 'https://github.com/svitzebec/aries-askar/blob/feature/static-lib-ios-pod/builds/ios/v0.2.2/aries-askar.zip?raw=true' }
     s.vendored_libraries = 'libaries_askar.a'
     s.ios.xcconfig = { "HEADER_SEARCH_PATHS" => "$(PODS_ROOT)" }
     s.platform = :ios
