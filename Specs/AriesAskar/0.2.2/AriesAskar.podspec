@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
                                   LICENSE
                                 }
     s.author                  = { "Svit Zebec" => "svit.zebec@kamino.si" }
-    s.source                  = { :http => 'https://github.com/svitzebec/aries-askar/blob/feature/static-lib-ios-pod/builds/ios/v0.2.2/aries-askar.zip?raw=true' }
+    s.source                  = { :http => 'https://github.com/svitzebec/aries-askar/blob/main/Specs/AriesAskar/0.2.2/aries-askar.zip?raw=true' }
     s.ios.source_files        = 'aries-askar.h', 'AskarTypes.h'
     s.ios.vendored_libraries  = 'libaries_askar.a'
     s.ios.xcconfig            = { 'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}"' }
