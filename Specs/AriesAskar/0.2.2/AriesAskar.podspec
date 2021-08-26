@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "AriesAskar"
-    s.version      = "0.2.2-test5"
+    s.version      = "0.2.2"
     s.summary      = "A brief description of AriesAskar project."
     s.description  = <<-DESC
     An extended description of AriesAskar project.
