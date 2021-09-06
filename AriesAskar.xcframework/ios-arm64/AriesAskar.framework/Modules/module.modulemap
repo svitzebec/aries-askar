@@ -1,6 +1,0 @@
-framework module AriesAskar {
-  umbrella header "AriesAskar.h"
-
-  export *
-  module * { export * }
-}
